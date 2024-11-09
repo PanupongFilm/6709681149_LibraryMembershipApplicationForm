@@ -1,0 +1,131 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+
+}
+
+body {
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-size: cover;
+    background-image: url(resource/BOOK.jpg);
+}
+
+
+.container {
+
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+
+}
+
+.container header {
+
+    padding-top: 10px;
+    text-align: center;
+    font-size: 3.5vh;
+    color: rgb(202, 155, 24);
+    text-decoration: underline;
+    text-decoration-color: rgb(212, 133, 13)
+}
+
+.container form {
+
+    margin-top: 30px;
+    color: rgb(202, 155, 24);
+    font-size: 2.4vh;
+
+}
+
+.myinput {
+
+    width: 100%;
+    margin-top: 20px;
+
+
+}
+
+
+.myinput input {
+
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid #c9baba;
+    border-radius: 20px;
+    border: 1px solid #898b89;
+
+
+}
+
+.mycolumn {
+    display: flex;
+    column-gap: 20px;
+}
+
+.myinput select {
+
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    border: 1px solid #898b89;
+    border-radius: 20px;
+
+
+}
+
+.information {
+
+    margin-top: 24px;
+
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin: 10px;
+
+}
+
+input::placeholder {
+
+    color: rgb(0, 0, 0);
+}
+
+option {
+
+    font-size: 1.7vh;
+
+}
+
+
+button {
+
+    height: 60px;
+    width: 100%;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #f79400, #ff99e0);
+    border: none;
+    border-radius: 30px;
+    font-size: 2.5vh;
+    color: white
+}

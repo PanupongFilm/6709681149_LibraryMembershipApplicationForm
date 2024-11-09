@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library Membership Form</title>
+</head>
+
+<body>
+
+
+
+    <section class="container">
+
+        <header>Library Membership Form</header>
+
+
+        <form>
+
+            <!-- Name in Thai -->
+
+            <div class="myinput">
+                <label for="thai-name">Full Name (in Thai) *</label>
+                <input type="text" id="name" name="name" pattern="^[\u0E00-\u0E7F]+([ ][\u0E00-\u0E7F]+)*$" required
+                    title="Please enter your full name in Thai" placeholder="Please enter your full name"><br><br>
+            </div>
+
+            <!-- Name in English -->
+
+            <div class="myinput">
+                <label for="english-name">Full Name (in English) *</label>
+                <input type="text" id="name" name="name" pattern="^[A-Za-z]+([ ]?[A-Za-z]+)*$" required
+                    title="Please enter your full name in English" placeholder="Please enter your full name"><br><br>
+            </div>
+
+            <!-- Gender -->
+
+            <div class="mycolumn">
+                <div class="myinput">
+                    <label for="gender">Gender *</label>
+                    <div class="mybox"></div>
+                    <select id="gender" name="gender" required>
+
+                        <option value="" disabled selected>-Select-</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Date of Birth -->
+
+                <div class="myinput">
+                    <label for="birthdate">Date of Birth *</label>
+                    <input type="date" id="birthdate" name="birthdate" required><br><br>
+                </div>
+            </div>
+
+            <!-- Student ID -->
+
+            <div class="mycolumn">
+                <div class="myinput">
+                    <label for="student_id">Student ID *</label>
+                    <input type="text" id="student_id" name="student_id" pattern="^\d{10}$"
+                        title="Please enter a 10-digit student ID" placeholder="Enter your 10-digit Student ID"
+                        required><br><br>
+
+
+                </div>
+
+                <!-- Faculty -->
+
+                <div class="myinput">
+                    <label for="faculty">Faculty *</label>
+                    <select id="faculty" name="faculty" required>
+
+                        <option value="" disabled selected>-Select-</option>
+                        <option value="science">Faculty of Science and Technology</option>
+                        <option value="engineering">Faculty of Engineering</option>
+                        <option value="medicine">Faculty of Medicine</option>
+                        <option value="arts">Faculty of Arts</option>
+                        <option value="business">Faculty of Business Administration</option>
+                        <option value="law">Faculty of Law</option>
+                        <option value="education">Faculty of Education</option>
+                        <option value="social-sciences">Faculty of Social Sciences</option>
+                    </select><br><br>
+                </div>
+            </div>
+
+            <!-- Email Address -->
+
+            <div class="myinput">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required
+                    title="Please enter a valid email address, e.g. example@gmail.com"
+                    placeholder="Please enter your email address"><br><br>
+            </div>
+
+            <!-- Book Genre Interest -->
+
+            <div class="myinput">
+                <label for="book-type">Interested Book Genre *</label>
+                <div class="mybox"></div>
+                <select id="book-type" name="book-type" required>
+
+                    <option value="" disabled selected>-Select-</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="science">Comics</option>
+                    <option value="technology">History</option>
+                    <option value="history">Self-Development</option>
+                </select><br><br>
+
+
+            </div>
+
+            <!-- Newsletter Subscription -->
+
+            <div class="information">
+
+                <label>Would you like to receive library updates via email?</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+
+            </div>
+
+            <button>Submit</button>
+
+
+        </form>
+
+    </section>
+
+
+
+</body>
+
+</html>
